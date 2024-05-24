@@ -1,7 +1,0 @@
-plotly
-statsmodels
-streamlit
-streamlit-pandas-profiling
-pygwalker
-ydata-profiling
-sweetviz
