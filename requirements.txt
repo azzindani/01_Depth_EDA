@@ -1,0 +1,5 @@
+geopandas
+matplotlib
+plotly
+statsmodels
+streamlit
