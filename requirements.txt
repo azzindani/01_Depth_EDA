@@ -1,5 +1,6 @@
-geopandas
-matplotlib
 plotly
 statsmodels
 streamlit
+streamlit-pandas-profiling
+pygwalker
+sweetviz
