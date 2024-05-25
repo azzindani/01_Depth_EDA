@@ -6,3 +6,4 @@ pygwalker==0.4.8.6
 sweetviz==2.3.1
 ydata-profiling==4.8.3
 visions==0.7.6
+pandas-profiling==3.6.6
