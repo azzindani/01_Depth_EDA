@@ -72,7 +72,7 @@ with tab_2:
     report.show_html()
     with open('SWEETVIZ_REPORT.html', 'r') as f:
       html_data = f.read()
-    components.html(html_data, scrolling = True, height = 700)
+    components.html(html_data, scrolling = True, height = 600)
 
     st.download_button(
       label = 'Download Full Report',
