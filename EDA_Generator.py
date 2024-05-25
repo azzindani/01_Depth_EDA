@@ -15,9 +15,8 @@ warnings.filterwarnings('ignore')
 st.set_page_config(page_title = 'EDA', page_icon = ':1234:', layout = 'wide')
 st.title('In-Depth Exploratory Data Analysis')
 
-tab_1, tab_2, tab_3 = st.tabs([
+tab_1, tab_2 = st.tabs([
   'Chart Generation',
-  'YData Profiling',
   'SweetViz',
 ])
 
@@ -68,32 +67,6 @@ with tab_1:
     print('Please upload your dataset')
 
 with tab_2:
-
-  try:
-    pr = df.profile_report(
-      explorative = True,
-      correlations = {
-        "auto": {"calculate": True},
-        "pearson": {"calculate": True},
-        "spearman": {"calculate": True},
-        "kendall": {"calculate": True},
-        "phi_k": {"calculate": True},
-        "cramers": {"calculate": True},
-      }
-    )
-    st.write(df)
-    st_profile_report(pr)
-
-    export = pr.to_html()
-    st.download_button(
-      label = 'Download Full Report',
-      data = export,
-      file_name = 'Profiling_Report.html'
-    )
-  except:
-    pass
-
-with tab_3:
   try:
     report = sv.analyze(df)
     report.show_html()
