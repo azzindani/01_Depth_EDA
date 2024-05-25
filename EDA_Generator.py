@@ -2,14 +2,14 @@ import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
 import pygwalker as pyg
-import ydata_profiling
+#import ydata_profiling
 import sweetviz as sv
 import warnings
 import streamlit.components.v1 as components
 
 from pygwalker.api.streamlit import StreamlitRenderer
-from streamlit_pandas_profiling import st_profile_report
-from autoviz import AutoViz_Class
+#from streamlit_pandas_profiling import st_profile_report
+#from autoviz import AutoViz_Class
 warnings.filterwarnings('ignore')
 
 st.set_page_config(page_title = 'EDA', page_icon = ':1234:', layout = 'wide')
