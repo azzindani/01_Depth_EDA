@@ -35,7 +35,7 @@ with st.sidebar:
 
   title = st.text_input('Paste API URL', None)
 
-  st.button('Use Sample Data', on_click = click_button)
+  st.button('Use Data Sample', on_click = click_button)
 
   st.write(
     'Refresh the browser if you want to reset everything'
